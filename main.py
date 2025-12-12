@@ -1,7 +1,10 @@
 from menu import main_menu
+from menu import user_text
+
 
 
 def main():
+    print("\n" * 50)
     print("")
     print("----API AI Caller----\n")
     print("Please choose:\n")
