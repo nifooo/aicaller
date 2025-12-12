@@ -1,4 +1,3 @@
-import os
 from dotenv import load_dotenv
 from anthropic import Anthropic
 
@@ -6,10 +5,7 @@ from anthropic import Anthropic
 load_dotenv()
 
 def aicaller(user_text):
-    client = Anthropic(
-        api_key=os.getenv("ANTHROPIC_API_KEY")  # gitignore!
-)
-
+    client = Anthropic()         # your API key in .env for ANTHROPIC_API_KEY. Anthrophic finds key on it s own
     message = client.messages.create(
         model="claude-sonnet-4-5-20250929",
         max_tokens=1024,
