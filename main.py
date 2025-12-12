@@ -9,12 +9,17 @@ def main():
     print("(2) - Show current text\n")
     print("(3) - Delete current text\n")
     print("(4) - Call AI\n")
+    print("(0) - Quit")
     
     
     
     
+while True:
+    main()
+    key = input("Please choose (1-4)")
+    main_menu(key)
+    main()
+    if key == "0":
+        break
 
-main()
-key = input("Please choose (1-4)")
-main_menu(key)
 
